@@ -55,8 +55,9 @@ header {
   border: 2px solid black;
   background: #d88191;
   color: white;
-  position: relative;
   cursor: pointer;
+  outline: none;
+  display: none;
 }
 
 .back {
