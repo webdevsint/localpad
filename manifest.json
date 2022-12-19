@@ -3,7 +3,7 @@
     "background_color": "#d88191",
     "display": "standalone",
     "scope": "",
-    "start_url": "/",
+    "start_url": "/localpad/",
     "name": "localpad",
     "short_name": "localpad",
     "description": "a decentralized note keeping app",
