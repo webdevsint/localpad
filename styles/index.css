@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 1rem;
+  text-decoration: underline;
+  font-size: 40px;
+  text-decoration-color: #d88191;
+}
+
+.new-note {
+  margin-left: 1rem;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.new-note:hover span {
+  background: #d88191;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.note-preview {
+  margin: 1rem;
+  padding: 10px;
+  border: 2px solid black;
+  position: relative;
+  background-color: white;
+}
+
+.note-preview:after {
+  content: "";
+  position: absolute;
+  background: #488494;
+  border: 2px solid black;
+  top: 8px;
+  left: 8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1;
+}
+
+.note-preview:hover .title-wrapper button {
+  display: block;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title-wrapper button {
+  background: #d88191;
+  border: 2px solid black;
+  color: white;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+}
+
+.title-wrapper button:hover {
+  background: #ca6779;
+}
+
+.preview-title {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+
+mark {
+  background: #488494;
+  color: white;
+}
+
+.preview-text {
+  margin-bottom: 2rem;
+}
+
+.preview-text h1, .preview-text h2, .preview-text h3, .preview-text h4 {
+  display: inline;
+}
+
+.preview-text p {
+  margin: 2px;
+}
+
+.preview-text a {
+  text-decoration: underline;
+  color: #488494;
+}
+
+
+footer {
+  margin: 30px 1rem;
+}
+
+footer a {
+  background: #d88191;
+  color: white;
+}
+
+@media (max-width: 380px) {
+  header {
+    padding: .6rem 1rem;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a decentralized note keeping app">
+    <script src="./scripts/quill.min.js"></script>
+    <link href="./styles/quill.snow.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./icons/icon-192x192.png">
+    <link rel="stylesheet" href="./styles/new.css">
+    <title>new note</title>
+</head>
+
+<body>
+    <header>localpad<span class="crumb">/new-note.</span>
+    </header>
+
+    <div class="container">
+        <div id="editor">
+        </div> <br>
+
+        <div class="actions">
+            <button class="btn" onclick="submitHandler()">submit</button> or <a href="/" class="back">cancel</a>
+        </div>
+    </div>
+
+    <script>
+        const quill = new Quill('#editor', {
+            placeholder: 'compose a new note...',
+            theme: 'snow'
+        });
+    </script>
+    <script src="./scripts/localdb.js"></script>
+    <script src="./scripts/new.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a decentralized note keeping app">
+    <link rel="icon" type="image/x-icon" href="./icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="./icons/icon-512x512.png">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>home</title>
+    <meta name="theme-color" content="#d88191">
+    <link rel='manifest' href='./manifest.json'>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('serviceWorker.js', { scope: './' })
+        }
+    </script>
+</head>
+
+<body>
+    <header>localpad.</header>
+
+    <a class="new-note" href="/new.html">create a <span>new note?</span></a>
+
+    <div class="notes-preview"></div>
+
+    <footer>created by <a href="https://instagram.com/nehan_yaser/" target="blank">nehan yaser</a></footer>
+
+    <script src="./scripts/localdb.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
