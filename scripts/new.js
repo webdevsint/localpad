@@ -29,6 +29,6 @@ function submitHandler() {
   } else {
     db.write(JSON.stringify(Date.now()), payload);
     alert("new note created!");
-    location.replace("/");
+    location.replace("/localpad/");
   }
 }
